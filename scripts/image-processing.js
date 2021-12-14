@@ -36,7 +36,7 @@ function validateImage(path) {
     const ignored = getIgnoreList();
 
     files.forEach((file) => {
-      if (file.endsWith(".jpg") || file.endsWith(".jpeg") || file.endsWith(".png")) {
+      if (file.endsWith(".jpg") || file.endsWith(".jpeg") || file.endsWith(".png") || file.endsWith(".PNG")) {
         const stat = fs.statSync(file);
         // fail in case or large sized jpeg/png
         if (stat.size > maxFileSize && !ignored.includes(file)) {
@@ -44,9 +44,9 @@ function validateImage(path) {
           valid = false;
         }
 
-        // check only for files modified within last 2 days
+        // check only for files modified within last 5 days
         const days = daysBetweenDates(new Date().getTime(), stat.mtime.getTime());
-        if (days <= 2) {
+        if (days <= 5) {
           let image = sharp(file);
           image
             .metadata()
