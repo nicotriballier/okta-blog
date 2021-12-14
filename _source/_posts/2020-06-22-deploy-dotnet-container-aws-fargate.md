@@ -16,7 +16,7 @@ tweets:
 image: blog/featured/okta-dotnet-mouse-down.jpg
 type: conversion
 changelog:
-  - 2021-12-07: Updated the post to use .NET SDK CLI, latest Okta Admin Console and VueJS 3. Changes to this article can be viewed in [oktadev/okta-blog#958](https://github.com/oktadev/okta-blog/pull/958). Changes to the example application can be viewed in [oktadev/okta-dotnetcore-aws-fargate-example#1](https://github.com/oktadev/okta-dotnetcore-aws-fargate-example/pull/1).
+  - 2021-12-07: Updated the post to use .NET SDK CLI, latest Okta Admin Console and VueJS 3. Update to work with TLS. Changes to this article can be viewed in [oktadev/okta-blog#997](https://github.com/oktadev/okta-blog/pull/997). Changes to the example application can be viewed in [oktadev/okta-dotnetcore-aws-fargate-example#1](https://github.com/oktadev/okta-dotnetcore-aws-fargate-example/pull/1).
 ---
 
 In the last article I wrote, we learned [how to host a serverless .NET application using AWS Lambda](/blog/2020/06/08/serverless-lambda-functions-csharp). In the article, we talked about the history of serverless and how companies are using these types of technology to simplify delivering APIs and functionality faster than traditional methods. Some problems will arise in this type of application when you need more capability than your standard HTTP requests like GET, POST, PUT, DELETE, etc. A great example of this is Web Sockets.
